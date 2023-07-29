@@ -1,0 +1,5 @@
+Full binary tree :-  either has 0  and 2 children
+Complete BT:= All levels are completely filled except the last level. The last level has all nodes in left as possible
+Perfect BT:- All leaf nodes should be on same level
+Balanced BT:- Height of tree at max log(N) , where N is total nodes
+Degenerate Tree:- Like LinkedList. Every node has single children
