@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <iomanip>
 using namespace std;
 
 #define int long long int
@@ -7,39 +8,10 @@ using namespace std;
 
 int32_t main()
 {
-
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-
-    int t;
-    cin >> t;
-    while (t--)
-    {
-        int n, p, k;
-        cin >> n >> p >> k;
-        int m = p % k;
-        int d = n / k;
-        int mx = n % k;
-
-        int total = 0;
-        if (mx >= m && m != 0)
-        {
-            total += (m - 1) * (d + 1);
-            total += (p / k);
-        }
-        else if (m == 0)
-        {
-            total = p / k;
-        }
-        else
-        {
-            total += (mx) * (d + 1);
-            total += (m - mx) * d;
-            total += (p / k);
-        }
-        cout << total + 1 << endl;
-    }
+    ios::sync_with_stdio(0);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    cout << fixed << setprecision(12) << (a / b) / (1 - (1 - a / b) * (1 - c / d));
 }
-
-// 0 5 10 1 6 2 7  3
